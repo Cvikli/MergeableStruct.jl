@@ -23,7 +23,7 @@ mutable struct BasicExample <: AbstractMergeableStruct
 	to::Int
 	data::Vector{Float32}
 end
-BasicExample()=BasicExample("test",20,30,Float32[])
+
 
 MergeableStruct.glob_pattern(obj::BasicExample) = "BasicExample_$(obj.config)_*_*"*".jld2"
 MergeableStruct.get_data(obj::BasicExample)     = begin
@@ -36,7 +36,12 @@ MergeableStruct.prepend(before::BasicExample,cache::BasicExample) = BasicExample
 MergeableStruct.is_same(o1::BasicExample, o2::BasicExample) = return o1.config == o2.config && o1.fr == o2.fr && o1.to == o2.to
 
 
-merge_load(BasicExample("test",3,53,Float32[]))
+
+merge_load(BasicExample("test",30,43,Float32[]))
+merge_load(BasicExample("test",30,48,Float32[]))
+merge_load(BasicExample("test",21,48,Float32[]))
+merge_load(BasicExample("test",2,48,Float32[]))
+merge_load(BasicExample("test",5,45,Float32[]))
 ```
 
 ## Note

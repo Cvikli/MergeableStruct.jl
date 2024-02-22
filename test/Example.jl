@@ -24,7 +24,11 @@ MergeableStruct.prepend(before::BasicExample,cache::BasicExample) = BasicExample
 MergeableStruct.is_same(o1::BasicExample, o2::BasicExample) = return o1.config == o2.config && o1.fr == o2.fr && o1.to == o2.to
 
 
-dd = merge_load(BasicExample("test",3,53,Float32[]))
+merge_load(BasicExample("test",30,43,Float32[]))
+merge_load(BasicExample("test",30,48,Float32[]))
+merge_load(BasicExample("test",21,48,Float32[]))
+merge_load(BasicExample("test",2,48,Float32[]))
+merge_load(BasicExample("test",5,53,Float32[]))
 
 # @mergeable_load BasicExample("test",30,40,Float32[])
 #%%
