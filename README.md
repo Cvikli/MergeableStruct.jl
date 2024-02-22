@@ -12,8 +12,8 @@ This pkg is to provide an interface that help to build a dataset to work this wa
 
 So you extend some functions and you dataset will be *extendable* 
 
-Example:
-#  an exmpla struct that will be working out of the box with minor extension of the core interface
+# An example struct 
+This should work nearly out of the box with minor extension of the core interface...
 ```julia
 using MergeableStruct
 
