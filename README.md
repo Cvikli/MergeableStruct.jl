@@ -12,7 +12,7 @@ This pkg is to provide an interface that help to build a dataset to work this wa
 
 So you extend some functions and you dataset will be *extendable* 
 
-# An example struct 
+## An example struct 
 This should work nearly out of the box with minor extension of the core interface...
 ```julia
 using MergeableStruct
@@ -39,7 +39,7 @@ MergeableStruct.is_same(o1::BasicExample, o2::BasicExample) = return o1.config =
 merge_load(BasicExample("test",3,53,Float32[]))
 ```
 
-# Note
+## Note
 It is really adviced to use this package with https://github.com/Cvikli/MemoizeTyped.jl 
 So you can use the `load` function you want but it won't load the data multiple times just reuse from cache. 
 
