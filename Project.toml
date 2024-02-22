@@ -1,0 +1,8 @@
+name = "MergeableStruct"
+uuid = "3ebc5f09-06bb-42ec-8c27-231da57e2348"
+authors = ["Marcell <havlikmarcell@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+Glob = "c27321d9-0574-5035-807b-f59d2c89b15c"
+JLD2 = "033835bb-8acc-5ee8-8aae-3f567f8a3819"
