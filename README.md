@@ -41,7 +41,7 @@ merge_load(BasicExample("test",3,53,Float32[]))
 
 ## Note
 It is really adviced to use this package with https://github.com/Cvikli/MemoizeTyped.jl 
-So you can use the `load` function you want but it won't load the data multiple times just reuse from cache. 
+So you can use the `load` function without reloading the data multiple times, so just reuse from cache. 
 
 I am still trying to figure out what is the best pattern to do this that match for everyone usecase. It is not 100% trivial. So maybe there should be multiple way to do it later on. 
 
